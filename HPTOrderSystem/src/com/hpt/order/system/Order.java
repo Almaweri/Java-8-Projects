@@ -30,11 +30,9 @@ public class Order {
 	}
 
 public double computeTax() {
-System.out.println("The tax for this order is: " +
-orderAmount
-* Order.taxRate);
+System.out.println("The tax for this order is: " + orderAmount * Order.taxRate);
 return orderAmount * Order.taxRate;
-}
+	}
 
 	public char jobSize() {
 
