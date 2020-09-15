@@ -20,7 +20,7 @@ public class ContactBean {
 		return phoneNumber;
 	}
 	
-	// ??
+	// createContact method
 	public static ContactBean createContact (String name, String phoneNumber) {
 		return new ContactBean(name, phoneNumber);
 	}
