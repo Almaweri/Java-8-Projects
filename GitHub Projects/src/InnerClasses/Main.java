@@ -1,6 +1,8 @@
 package InnerClasses;
 
 import java.util.Scanner;
+
+import InnerClasses.Button.OnClickLister;
 import InnerClasses.Gearbox.Gear;
 
 public class Main {
@@ -10,20 +12,32 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
-		class ClickListner implements Button.OnClickLister { // Button is the class and OnlickListner is the interface in the same class.
-
-			public ClickListner( ) {
-				System.out.println("I've been attached");
-			}
-			
+		/*
+		 * class ClickListner implements Button.OnClickLister { // Button is the class
+		 * and OnlickListner is the interface in the same class.
+		 * 
+		 * public ClickListner( ) { System.out.println("I've been attached"); }
+		 * 
+		 * @Override public void onClick(String title) { System.out.println(title +
+		 * " was clicked");
+		 * 
+		 * } }
+		 * 
+		 * btnPrint.setOnClickListner(new ClickListner());
+		 */
+		
+		
+		btnPrint.setOnClickListner(new OnClickLister() {
+	
 			@Override
 			public void onClick(String title) {
 				System.out.println(title + " was clicked");
 				
 			}
-		}
+		});
 		
-		btnPrint.setOnClickListner(new ClickListner());
+		
+		
 		listen();
 	}
 		

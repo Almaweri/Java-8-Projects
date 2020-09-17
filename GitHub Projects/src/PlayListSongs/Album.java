@@ -29,6 +29,14 @@ public class Album {
 				return null;
 			}
 	
+	public Song findSong (int trackNumber) {
+		int index = trackNumber - 1;
+		if((index >= 0) && (index < listSongs.size())) {
+		//listSongs.add(index);
+		}
+		return null;
+	}
+	
 	// 2- making sure that the song is not duplicated
 	public boolean addSong (String title, double duration) {
 		if(findSong(title) == null) { //  checking if the song is not found --> then add the new song

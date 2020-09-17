@@ -1,4 +1,4 @@
-package PlayListSongs;
+package InnerClassesChallenge;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -6,14 +6,14 @@ import java.util.LinkedList;
 import java.util.ListIterator;
 import java.util.Scanner;
 
-public class Main {
+public class Main_InnerClass_Challenge {
 
 	private static ArrayList<Album> albums = new ArrayList<>();
 	
+	
+	
+	
 	public static void main(String[] args) {
-		
-		
-		
 		
 		// creating the first album
 		  Album album = new Album("Stormbringer", "Deep Purple");
